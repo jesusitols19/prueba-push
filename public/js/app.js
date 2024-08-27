@@ -7,12 +7,12 @@ var swReg;
 if ( navigator.serviceWorker ) {
 
 
-    /*if ( url.includes('localhost') ) {
+    if ( url.includes('localhost') ) {
         swLocation = '/sw.js';
-    }*/
+    }
 
 
-    //window.addEventListener('load', function() {
+    window.addEventListener('load', function() {
 
         navigator.serviceWorker.register( swLocation ).then( function(reg){
 
@@ -20,8 +20,7 @@ if ( navigator.serviceWorker ) {
             swReg.pushManager.getSubscription().then( verificaSuscripcion );
 
         });
-
-    //});
+    });
 
 }
 
