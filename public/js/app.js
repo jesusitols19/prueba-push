@@ -17,12 +17,14 @@ if ( navigator.serviceWorker ) {
         navigator.serviceWorker.register( swLocation ).then( function(reg){
 
             swReg = reg;
-            swReg.pushManager.getSubscription().then( verificaSuscripcion );
+            //swReg.pushManager.getSubscription().then( verificaSuscripcion );
 
         });
     });
 
 }
+
+verificaSuscripcion();
 
 
 
