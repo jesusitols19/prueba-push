@@ -24,7 +24,7 @@ if ( navigator.serviceWorker ) {
 
 }
 
-verificaSuscripcion();
+//  verificaSuscripcion();
 
 
 
