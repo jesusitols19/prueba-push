@@ -336,7 +336,10 @@ btnDesactivadas.on( 'click', function() {
                 body: JSON.stringify( suscripcion )
             })
             .then( verificaSuscripcion )
-            .catch( cancelarSuscripcion );
+            .catch(e => {
+                console.log("No se activo el service worker");
+                cancelarSuscripcion(false);
+            });
 
 
         });
