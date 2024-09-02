@@ -12,7 +12,7 @@ if ( navigator.serviceWorker ) {
     }
 
 
-    //window.addEventListener('load', function() {
+    window.addEventListener('load', function() {
 
         navigator.serviceWorker.register( swLocation ).then( function(reg){
 
@@ -20,7 +20,7 @@ if ( navigator.serviceWorker ) {
             swReg.pushManager.getSubscription().then( verificaSuscripcion );
 
         });
-    //});
+    });
 
 }
 
