@@ -40,15 +40,15 @@ const APP_SHELL_INMUTABLE = [
 self.addEventListener('install', e => {
 
     console.log("Desde el install, se instalo correctamente");
-    const cacheStatic = caches.open( STATIC_CACHE ).then(cache => 
+    /*const cacheStatic = caches.open( STATIC_CACHE ).then(cache => 
         cache.addAll( APP_SHELL ));
 
     const cacheInmutable = caches.open( INMUTABLE_CACHE ).then(cache => 
-        cache.addAll( APP_SHELL_INMUTABLE ));
+        cache.addAll( APP_SHELL_INMUTABLE ));*/
 
+    self.skipWaiting();    
 
-
-    e.waitUntil( Promise.all([ cacheStatic, cacheInmutable ])  );
+    /*e.waitUntil( Promise.all([ cacheStatic, cacheInmutable ])  );*/
 
 });
 
