@@ -342,7 +342,7 @@ btnDesactivadas.on( 'click', function() {
             });
 
 
-        });
+        }).catch(console.log);
 
 
     });
