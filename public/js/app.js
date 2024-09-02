@@ -19,7 +19,7 @@ if ( navigator.serviceWorker ) {
             swReg = reg;
             swReg.pushManager.getSubscription().then( verificaSuscripcion );
 
-        });
+        }).catch(console.log);
     });
 
 }
