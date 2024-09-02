@@ -46,7 +46,7 @@ self.addEventListener('install', e => {
     const cacheInmutable = caches.open( INMUTABLE_CACHE ).then(cache => 
         cache.addAll( APP_SHELL_INMUTABLE ));*/
 
-    self.skipWaiting();    
+    //self.skipWaiting();    
 
     /*e.waitUntil( Promise.all([ cacheStatic, cacheInmutable ])  );*/
 
